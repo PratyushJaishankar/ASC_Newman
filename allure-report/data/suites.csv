@@ -1,0 +1,11 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","338","Patch Update","Class_Assignment_23_Sept_2025","Tue Sep 23 14:33:50 IST 2025","passed","Tue Sep 23 14:33:50 IST 2025","","","",""
+"This is a GET request and it is used to ""get"" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).
+
+A successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data.","302","Get All","Class_Assignment_23_Sept_2025","Tue Sep 23 14:33:48 IST 2025","passed","Tue Sep 23 14:33:48 IST 2025","","","",""
+"","294","Delete Entry","Class_Assignment_23_Sept_2025","Tue Sep 23 14:33:50 IST 2025","passed","Tue Sep 23 14:33:50 IST 2025","","","",""
+"","335","Post New","Class_Assignment_23_Sept_2025","Tue Sep 23 14:33:48 IST 2025","passed","Tue Sep 23 14:33:49 IST 2025","","","",""
+"This is a GET request and it is used to ""get"" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).
+
+A successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data.","94","Get by ID","Class_Assignment_23_Sept_2025","Tue Sep 23 14:33:48 IST 2025","passed","Tue Sep 23 14:33:48 IST 2025","","","",""
+"","1001","Put Update","Class_Assignment_23_Sept_2025","Tue Sep 23 14:33:49 IST 2025","passed","Tue Sep 23 14:33:50 IST 2025","","","",""

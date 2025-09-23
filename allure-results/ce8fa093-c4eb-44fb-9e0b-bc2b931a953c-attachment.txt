@@ -1,0 +1,20 @@
+pm.test("Status code is 200", function () {
+
+pm.response.to.have.status(200);
+
+});
+
+
+pm.test("Post has correct structure", function () {
+
+var jsonData = pm.response.json();
+
+pm.expect(jsonData).to.have.property('id');
+
+pm.expect(jsonData).to.have.property('title');
+
+pm.expect(jsonData).to.have.property('body');
+
+pm.expect(jsonData).to.have.property('userId');
+
+});

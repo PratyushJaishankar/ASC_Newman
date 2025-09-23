@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" hostname="https://jsonplaceholder.typicode.com" package="" name="Get All" tests="2" failures="0" errors="0" timestamp="2025-09-23T14:25:10.167" time="0.281">
+    <properties>
+      <property name="base_url" value="https://jsonplaceholder.typicode.com"/>
+      <property name="timeout" value="5000"/>
+    </properties>
+    <testcase classname=" / Get All" name="Status code is 200" time="0.141"/>
+    <testcase classname=" / Get All" name="Response has posts array" time="0.141"/>
+  </testsuite>
+  <testsuite id="1" hostname="https://jsonplaceholder.typicode.com" package="" name="Get by ID" tests="2" failures="0" errors="0" timestamp="2025-09-23T14:25:10.448" time="0.025">
+    <properties>
+      <property name="base_url" value="https://jsonplaceholder.typicode.com"/>
+      <property name="timeout" value="5000"/>
+    </properties>
+    <testcase classname=" / Get by ID" name="Status code is 200" time="0.013"/>
+    <testcase classname=" / Get by ID" name="Post has correct structure" time="0.013"/>
+  </testsuite>
+  <testsuite id="2" hostname="https://jsonplaceholder.typicode.com" package="" name="Post New" tests="2" failures="0" errors="0" timestamp="2025-09-23T14:25:10.473" time="0.328">
+    <properties>
+      <property name="base_url" value="https://jsonplaceholder.typicode.com"/>
+      <property name="timeout" value="5000"/>
+    </properties>
+    <testcase classname=" / Post New" name="Status code is 201" time="0.164"/>
+    <testcase classname=" / Post New" name="Response contains created post" time="0.164"/>
+  </testsuite>
+  <testsuite id="3" hostname="https://jsonplaceholder.typicode.com" package="" name="Put Update" tests="0" failures="0" errors="0" timestamp="2025-09-23T14:25:10.801" time="0.283">
+    <properties>
+      <property name="base_url" value="https://jsonplaceholder.typicode.com"/>
+      <property name="timeout" value="5000"/>
+    </properties>
+  </testsuite>
+  <testsuite id="4" hostname="https://jsonplaceholder.typicode.com" package="" name="Delete Entry" tests="0" failures="0" errors="0" timestamp="2025-09-23T14:25:11.084" time="0.274">
+    <properties>
+      <property name="base_url" value="https://jsonplaceholder.typicode.com"/>
+      <property name="timeout" value="5000"/>
+    </properties>
+  </testsuite>
+  <testsuite id="5" hostname="https://jsonplaceholder.typicode.com" package="" name="Patch Update" tests="0" failures="0" errors="0" timestamp="2025-09-23T14:25:11.358" time="0.274">
+    <properties>
+      <property name="base_url" value="https://jsonplaceholder.typicode.com"/>
+      <property name="timeout" value="5000"/>
+    </properties>
+  </testsuite>
+</testsuites>
