@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" hostname="https://jsonplaceholder.typicode.com" package="" name="Get All" tests="2" failures="0" errors="0" timestamp="2025-09-23T12:23:01.119" time="0.201">
+    <testcase classname=" / Get All" name="Status code is 200" time="0.101"/>
+    <testcase classname=" / Get All" name="Response has posts array" time="0.101"/>
+  </testsuite>
+  <testsuite id="1" hostname="https://jsonplaceholder.typicode.com" package="" name="Get by ID" tests="1" failures="0" errors="0" timestamp="2025-09-23T12:23:01.320" time="0.028">
+    <testcase classname=" / Get by ID" name="Status code is 200" time="0.028"/>
+  </testsuite>
+  <testsuite id="2" hostname="https://jsonplaceholder.typicode.com" package="" name="Post New" tests="2" failures="0" errors="0" timestamp="2025-09-23T12:23:01.348" time="0.277">
+    <testcase classname=" / Post New" name="Status code is 201" time="0.139"/>
+    <testcase classname=" / Post New" name="Response contains created post" time="0.139">
+      <failure type="AssertionError" message="expected 'Welcome to Ascendion' to deeply equal 'Test Post'">
+        <![CDATA[AssertionError: expected 'Welcome to Ascendion' to deeply equal 'Test Post'
+   at Object.eval sandbox-script.js:2:3)]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite id="3" hostname="https://jsonplaceholder.typicode.com" package="" name="Put Update" tests="0" failures="0" errors="0" timestamp="2025-09-23T12:23:01.625" time="0.285"/>
+  <testsuite id="4" hostname="https://jsonplaceholder.typicode.com" package="" name="Delete Entry" tests="0" failures="0" errors="0" timestamp="2025-09-23T12:23:01.910" time="0.268"/>
+  <testsuite id="5" hostname="https://jsonplaceholder.typicode.com" package="" name="Patch Update" tests="0" failures="0" errors="0" timestamp="2025-09-23T12:23:02.178" time="0.273"/>
+</testsuites>
