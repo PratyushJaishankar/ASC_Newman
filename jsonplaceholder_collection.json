@@ -65,11 +65,29 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"",
+							"pm.response.to.have.status(200);",
+							"",
+							"});",
+							"",
+							"",
+							"pm.test(\"Post has correct structure\", function () {",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.expect(jsonData).to.have.property('id');",
+							"",
+							"pm.expect(jsonData).to.have.property('title');",
+							"",
+							"pm.expect(jsonData).to.have.property('body');",
+							"",
+							"pm.expect(jsonData).to.have.property('userId');",
+							"",
 							"});"
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -77,7 +95,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/todos?id=2",
+					"raw": "https://jsonplaceholder.typicode.com/posts/1",
 					"protocol": "https",
 					"host": [
 						"jsonplaceholder",
@@ -85,13 +103,8 @@
 						"com"
 					],
 					"path": [
-						"todos"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "2"
-						}
+						"posts",
+						"1"
 					]
 				},
 				"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
@@ -126,20 +139,22 @@
 						"packages": {},
 						"requests": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
 				}
 			],
 			"request": {
 				"method": "POST",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"userId\": 1,\r\n    \"id\": 201,\r\n    \"title\": \"Welcome to Ascendion\",\r\n    \"completed\": false\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
 					"raw": "https://jsonplaceholder.typicode.com/posts",
 					"protocol": "https",
