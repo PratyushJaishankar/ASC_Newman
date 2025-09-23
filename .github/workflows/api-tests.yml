@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4   # ✅ latest version
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4  # ✅ latest version
         with:
-          node-version: '16'
+          node-version: '20'         # ✅ current LTS (Node 20)
       - name: Install Newman
         run: npm install -g newman newman-reporter-html
       - name: Run API Tests
@@ -21,7 +21,7 @@ jobs:
             -r cli,html \
             --reporter-html-export report.html
       - name: Upload HTML Report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4  # ✅ latest version
         with:
           name: api-test-report
           path: report.html
